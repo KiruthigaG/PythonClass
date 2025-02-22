@@ -1,0 +1,137 @@
+LIST
+# 1. How can you reverse a Python list?
+list1=[34,56,2,7,8,9,'Apple']
+print(f'Before Reversing: {list1}')
+list1.reverse()
+print(f'After Reversing: {list1}')
+==================================================================================
+# 2. How do you check if an item exists in a Python list?
+print(2 in list1)
+==================================================================================
+#   3. What method would you use to concatenate two lists in Python?
+list2 =["new","list",2,4,"extend"]
+list1.extend(list2)
+print(list1)
+==================================================================================
+# 4. How do you find the length of a list in Python?
+print(f'Length of the list:{len(list1)}')
+==================================================================================
+# 5. How do you sort a list in Python, and what are the options for sorting (ascending vs descending)?
+list3=[4,5,7,89,100,34,23,12,53]
+print("Sort in ascending order:")
+list3.sort()
+print(list3)
+print("Sort in descending order:")
+list3.sort(reverse=True)
+print(list3)
+==================================================================================
+# 6. How would you remove duplicates from a Python list
+list4=[2,2,45,6,7,6,8,90,91,90]
+print("Display list with duplicates:")
+print(list4)
+list5 =set(list4)
+print("Display list without duplicates:")
+print(list5)
+
+TUPLE
+
+# 1.What is a tuple in Python, and how is it different from a list?
+    #Tuple is similar to list in creating objects separated by comma using () but it is immutable,
+    #once created, the tuple can not be updated with values, removed and extended
+===========================================================================================
+#  2. How do you create a tuple in Python?
+temp =(2,5,6,7)
+print(temp)
+===========================================================================================
+# 3. Can you modify the elements of a tuple once it is created? Why or why not?
+    # no we can not modify as it is immutable
+===========================================================================================
+# 4. How do you access elements in a tuple?
+for i in range(0,len(temp)):
+    print(temp[I])
+===========================================================================================
+#5. How can you convert a tuple into a list and vice versa?
+
+temp1=list(temp)
+print(f'Tuple-List: {temp1} and the dataype is {type(temp1)}')
+temp=tuple(temp1)
+print(f'List-Tuple: {temp} and the dataype is {type(temp)}')
+===========================================================================================
+SET
+#    1. Write a Python program to find the union of two sets.
+#     Input:
+#         Set A: {1, 2, 3, 4}
+#         Set B: {3, 4, 5, 6}
+SetA= {1, 2, 3, 4}
+SetB= {3, 4, 5, 6}
+print("Union of SetA and SetB:")
+print(SetA.union(SetB))
+===========================================================================================
+
+# 2. Write a Python program to find the intersection of two sets.
+print("Intersection of SetA and SetB:")
+print(SetA.intersection(SetB))
+===========================================================================================
+
+#3. Write a Python program to find the difference between two sets, i.e., elements that are in Set A but not in Set B.
+print("Difference of SetA and SetB:")
+print(SetA.difference(SetB))
+===========================================================================================
+
+# 4. Write a Python program to check if one set is a subset of another.
+print("Subset of SetA in SetB:")
+print(SetA.issubset(SetB))
+SetC={4,5}
+print("Subset of SetC in SetB:")
+print(SetC.issubset(SetB))
+===========================================================================================
+DICTIONARY
+# 1. Write a Python program to merge two dictionaries. If there are any common keys, their values should be summed.
+DictA = {"a": 10, "b": 20}
+DictB = {"b": 30, "c": 40}
+DictC=DictA.copy()
+DictC.update(DictB)
+for key in DictA:
+    if key in DictB:
+        DictC[key]=DictA[key] + DictB[key]
+print(DictC)
+===========================================================================================
+
+#  2. Write a Python program to find the key with the highest value in a dictionary.
+newdir ={'a': 5, 'b': 10, 'c': 3, 'd': 7}
+valuelist=newdir.values()
+setvalue = list(valuelist)
+setvalue.sort()
+newval = setvalue[-1]
+largestkey={}
+for key in newdir:
+    if newdir[key] == newval:
+        largestkey[key]=newdir[key]
+        print(largestkey)
+===========================================================================================
+
+#3. Write a Python program to remove a key from a dictionary. If the key does not exist, handle it gracefully.
+dict1= {'a': 1, 'b': 2, 'c': 3}
+
+dict1.pop('b')
+print(dict1)
+===========================================================================================
+
+#4.Write a Python program to check if a key exists in a dictionary.
+dictcheck={'a': 100, 'b': 200}
+print('a' in dictcheck)
+===========================================================================================
+LIST COMPREHENSION
+#'1.Write a Python program using list comprehension to generate a list of all odd numbers between 1 and 20.
+
+value=[i for i in range(1,21) if i%2!=0]
+print(value)
+===========================================================================================
+
+#2. Write a Python program using list comprehension to convert a list of temperatures from Celsius to Fahrenheit.
+celsius=[0, 10, 20, 30, 40]
+fahrenheit=[i*(9/5)+32 for i in celsius]
+print(fahrenheit)
+
+
+
