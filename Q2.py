@@ -1,9 +1,18 @@
-# Create a program that takes a list of numbers and prints the sum, average, maximum, and minimum of the list.
+# Question:2.Ask the user to enter a word.
+# 	•	If the word has an even number of characters, print “Even length: [word in uppercase]”.
+# 	•	If the word has an odd number of characters, print “Odd length: [word reversed]”
 
-list1 =[3,5,7,8,2,10]
-print("Sum value of the list: " +str(sum(list1)))
-print("Average value of the list: " +str(sum(list1)/len(list1)))
-print("Maximum value of the list: " +str(max(list1)))
-print("Minimum value of the list: " +str(min(list1)))
 
+
+value= input("Enter a word:")
+count=0
+for char in value:
+    if char.isalpha():
+        count = count+1
+print(f'Length of the word entered:{count}')
+if(count %2 ==0):
+    print(f'Even length: {value.upper()}')
+else:
+    reverse_value = value[::-1]
+    print(f'Odd length: {reverse_value}')
 
