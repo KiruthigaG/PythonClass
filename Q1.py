@@ -1,19 +1,32 @@
-# 1.Write a Python program to swap two variables without using a temporary variable.
+# Question:1. Write a Python program that takes two numbers as input and
+# asks the user to choose an operation: addition, subtraction, multiplication, or division.
+# Perform the operation and display the result
 
-# With integer
-a=5
-b=10
-print("Before swapping: ")
-print(a,b)
-# Swapping action
-a,b=b,a
-print("After swapping: ")
-print(a,b)
-# With string
-a="Hello"
-b="Morning"
-print("Before swapping the string:")
-print(a,b)
-a,b=b,a
-print("After swapping the string:")
-print(a,b)
+
+num1 =int(input("Enter the first number:"))
+num2 =int(input("Enter the second number:"))
+
+operation = input("Enter the arithmetic operation to be performed:")
+
+match operation:
+    case '+':
+        result = num1+num2
+        print(f'Result for {'+'} operator is {result}')
+    case '-':
+        result = num1 - num2
+        print(f'Result for {'-'} operator is {result}')
+    case '*':
+        result = num1 * num2
+        print(f'Result for {'*'} operator is {result}')
+    case '/':
+        result = num1 / num2
+        print(f'Result for {'/'} operator is {result}')
+    case '//':
+        result = num1 // num2
+        print(f'Result for {'//'} operator is {result}')
+    case '**':
+        result = num1 ** num2
+        print(f'Result for {'**'} operator is {result}')
+    case _:
+        print("No operations were entered")
+
