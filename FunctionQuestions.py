@@ -8,7 +8,7 @@ def sumnum(n1,n2):
     return n1+n2
 print(f'Sum the values given:{sumnum(3,4)}')
 # 3. Write a function calculate_area that calculates the area of a rectangle. It should take two arguments, length and width, with default values of 5 and 10, respectively. If no arguments are passed, it should use these default values.
-def calculate_area(l=4,w=3):
+def calculate_area(l=5,w=10):
     return l*w
 print(f'Calculate area with parameters:{calculate_area(2,5)}')
 print(f'calculate area with default value:{calculate_area()}')
