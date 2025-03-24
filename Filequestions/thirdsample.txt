@@ -1,0 +1,8 @@
+Hello, World!
+Welcome to Python file handling!Hello world
+This is to test the python script
+My name is kiruthiga
+I am learning python
+I used to be an automation tester
+I used to live in uk
+Now i live in india
