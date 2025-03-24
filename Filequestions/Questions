@@ -1,0 +1,20 @@
+1. Write a Python program to create a new text file called sample.txt and write "Hello, World!" into it.
+    2. Write a Python program to read the contents of sample.txt and print them to the console.
+    3. Modify your program to append the text "Welcome to Python file handling!" to sample.txt.
+    4. Write a program to read a file line by line and print each line.
+    5. Modify the above program to store all lines in a list and print them.
+    6. Write a function that reads a file and counts the number of lines in it.
+    7. Write a Python program to read only the first 5 lines of a file.
+    8. Write a Python program that reads a CSV file called employees.csv and prints all employee names.
+    9. Write a Python program that writes a dictionary of student marks into a JSON file named marks.json.
+    10. Read a JSON file called config.json and print its contents as a dictionary
+    11. Write a Python program to count the number of words in a given text file.
+    12. Write a function that searches for a specific word in a file and prints the line numbers where it appears.
+    13. Write a Python script that reads a large text file line by line using a generator function.
+    14. Write a program to find and replace a word in a text file.
+    15. Write a Python script that copies contents from one file to another.
+    16. Write a Python script to count the number of words in a text file.
+    17. Modify the script to count the frequency of each word in the file.
+    18. Write a program that finds and replaces a word in a file.
+    19. Write a Python program to merge two text files into a third file.
+    20. Write a script to copy the contents of one file to another.
